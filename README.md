@@ -161,12 +161,18 @@ Configuring DHCP Excluded Addresses on a Cisco Router
 
 **Objective**
 ```
-Learn how to exclude certain IP addresses from being assigned to DHCP clients by the DHCP server service on a Cisco IOS device.```
+Learn how to exclude certain IP addresses from
+being assigned to DHCP clients by the DHCP server service on a 
+Cisco IOS device.
 ```
+
 **Scenario**
 ```
-You have been given a Cisco router configured as a DHCP server. You need to ensure that a specific range of IP addresses within the DHCP pool is excluded from being assigned to DHCP clients.
-This will allow you to reserve those IP addresses for static assignments or other network devices.
+You have been given a Cisco router configured as a DHCP server. 
+You need to ensure that a specific range of IP addresses within the 
+DHCP pool is excluded from being assigned to DHCP clients.
+This will allow you to reserve those IP addresses for static 
+assignments or other network devices.
 
 ```
 
