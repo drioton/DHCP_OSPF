@@ -1,5 +1,7 @@
-DHCP_Outside
+**DHCP+OSPF**
 
+
+![DHCP](images/DHCP_OSPF.png)
 
 **Router0**
 
@@ -89,6 +91,8 @@ Approximate round trip times in milli-seconds:
 
 **DHCP**
 
+![DHCP](images/DHCP_OSPF_1.png)
+
 **R1**
 ```
 ip dhcp pool r1
@@ -152,16 +156,17 @@ This will allow you to reserve those IP addresses for static assignments or othe
 ***Solution**
 
 **R1**
+
 ```
 ip dhcp excluded-address 192.168.1.2 192.168.1.100
 ip dhcp excluded-address 192.168.2.2 192.168.2.100
 ```
 
 **PC1-PC2**
+
 ```
 DHCP-->Static--->DHCP
 ```
-
 
 
 
