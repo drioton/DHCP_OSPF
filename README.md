@@ -28,7 +28,7 @@ ip address 10.0.0.2 255.255.255.252
 no shutdown
 exit
 interface GigabitEthernet0/1
-ip address 192.168.2.1 255.255.255.252
+ip address 192.168.2.1 255.255.255.0
 no shutdown
 exit
 ```
@@ -124,6 +124,24 @@ configure terminal
 interface GigabitEthernet0/1
 ip helper-address 10.0.0.1
 exit
+```
+
+
+**Test**
+```
+C:\>ping 192.168.1.101
+
+Pinging 192.168.1.101 with 32 bytes of data:
+
+Reply from 192.168.1.101: bytes=32 time<1ms TTL=126
+Reply from 192.168.1.101: bytes=32 time<1ms TTL=126
+Reply from 192.168.1.101: bytes=32 time<1ms TTL=126
+Reply from 192.168.1.101: bytes=32 time=1ms TTL=126
+
+Ping statistics for 192.168.1.101:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
 ```
 
 **Questions**
