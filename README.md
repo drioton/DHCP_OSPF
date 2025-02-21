@@ -151,7 +151,8 @@ Why port g0/1? Because the DHCP request comes through here.
 Why address 10.0.0.1? Because this is the address of the DHCP server.
 Why dns-server? Only for training
 Why 9.9.9.9? Because I like it.
-Why did I use OSPF? Because it’s faster than static IP assignment, and at least we practiced DHCP with OSPF
+Why did I use OSPF? Because it’s faster than static IP assignment, 
+and at least we practiced DHCP with OSPF
 ```
 
 **Task**
