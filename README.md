@@ -127,22 +127,7 @@ exit
 ```
 
 
-**Test**
-```
-C:\>ping 192.168.1.101
 
-Pinging 192.168.1.101 with 32 bytes of data:
-
-Reply from 192.168.1.101: bytes=32 time<1ms TTL=126
-Reply from 192.168.1.101: bytes=32 time<1ms TTL=126
-Reply from 192.168.1.101: bytes=32 time<1ms TTL=126
-Reply from 192.168.1.101: bytes=32 time=1ms TTL=126
-
-Ping statistics for 192.168.1.101:
-    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
-    Minimum = 0ms, Maximum = 1ms, Average = 0ms
-```
 
 **Questions**
 
@@ -157,28 +142,9 @@ and at least we practiced DHCP with OSPF
 
 **Task**
 ```
-Configuring DHCP Excluded Addresses on a Cisco Router
+Configuring DHCP Excluded Addresses on a Cisco Router.
+For both pools, exclude the range 2-100
 ```
-
-**Objective**
-```
-Learn how to exclude certain IP addresses from
-being assigned to DHCP clients by the DHCP server service on a 
-Cisco IOS device.
-```
-
-**Scenario**
-```
-You have been given a Cisco router configured as a DHCP server. 
-You need to ensure that a specific range of IP addresses within the 
-DHCP pool is excluded from being assigned to DHCP clients.
-This will allow you to reserve those IP addresses for static 
-assignments or other network devices.
-
-```
-
-
-
 
 <details>
 <summary>Solution</summary>
@@ -194,6 +160,23 @@ ip dhcp excluded-address 192.168.2.2 192.168.2.100
 
 ```
 DHCP-->Static--->DHCP
+```
+**Test**
+    
+```
+C:\>ping 192.168.1.101
+
+Pinging 192.168.1.101 with 32 bytes of data:
+
+Reply from 192.168.1.101: bytes=32 time<1ms TTL=126
+Reply from 192.168.1.101: bytes=32 time<1ms TTL=126
+Reply from 192.168.1.101: bytes=32 time<1ms TTL=126
+Reply from 192.168.1.101: bytes=32 time=1ms TTL=126
+
+Ping statistics for 192.168.1.101:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
 ```
 </details>
 
