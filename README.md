@@ -1,4 +1,4 @@
-**DHCP+OSPF**
+# DHCP+OSPF
 
 
 ![DHCP](images/DHCP_OSPF.png)
@@ -153,8 +153,11 @@ This will allow you to reserve those IP addresses for static assignments or othe
 ```
 
 
-***Solution**
 
+
+<details>
+<summary>Solution</summary>
+    
 **R1**
 
 ```
@@ -167,6 +170,7 @@ ip dhcp excluded-address 192.168.2.2 192.168.2.100
 ```
 DHCP-->Static--->DHCP
 ```
+</details>
 
 
 
